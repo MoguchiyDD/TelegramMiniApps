@@ -3,17 +3,21 @@
 # game.py
 
 
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
+from aiogram.types import (
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+    WebAppInfo
+)
 
 
 def gameBoard():
     """
     """
 
-    board = ReplyKeyboardMarkup(
-        keyboard=[
+    board = InlineKeyboardMarkup(
+        inline_keyboard=[
             [
-                KeyboardButton(
+                InlineKeyboardButton(
                     text="Minesweeper",
                     web_app=WebAppInfo(url="https://moguchiydd.github.io/TelegramMiniMinesweeper/")
                 )
